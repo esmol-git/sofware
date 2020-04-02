@@ -1,9 +1,9 @@
 {
-  "name": "start-template",
+  "name": "Software",
   "version": "1.1.0",
-  "description": "My start Template",
+  "description": "",
   "main": "index.js",
-  "author": "Salamatin Anatoliy",
+  "author": "",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.8.4",
@@ -32,7 +32,10 @@
     "imagemin-jpeg-recompress": "^6.0.0"
   },
   "dependencies": {
+    "bootstrap-4-grid": "^3.4.0",
+    "bootstrap-modal": "^2.2.4",
     "normalize.css": "^8.0.1",
+    "remodal": "^1.1.1",
     "svg4everybody": "^2.1.9"
   },
   "browserslist": [

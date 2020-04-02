@@ -13,6 +13,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
 }
 
 *,
@@ -45,6 +46,7 @@ a:not([class]) { text-decoration-skip-ink: auto; }
 img {
   max-width: 100%;
   display: block;
+  height: inherit;
 }
 
 input,
@@ -76,12 +78,18 @@ section { position: relative; }
 
 input,
 select,
-button { outline: none; }
+button {
+  outline: none;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+}
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  padding: 0 30px;
+  background-color: #ccc;
 }
 
 .content { flex: 1 0 auto; }
@@ -90,7 +98,88 @@ button { outline: none; }
   margin: 0 auto;
   max-width: $content-size;
   width: 100%;
+  padding: 0 60px;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
 }
+.title__mini{
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 26px;
+  color: $main-color;
+}
+.block-title{
+  &__main{
+    font-size: 80px;
+    line-height: 98px;
+    color: $main-color;
+    padding-bottom: 80px;
+    margin-bottom: 10px;
+  }
+  &__subtitle{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    position: relative;
+    padding-top: 20px;
+    &::before{
+      content: '';
+      background: #D1F1FD;
+      border-radius: 4px;
+      width: 160px;
+      height: 8px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: 1030px){
+  .block-title__main{
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 968px){
+  .block-title__main{
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .header{
+    padding-bottom: 70px !important;
+  }
+}
+@media (max-width: 770px){
+  .block-title__main{
+    font-size: 40px;
+    line-height: 45px;
+    padding-bottom: 30px;
+  }
+  .header{
+    padding-bottom: 30px !important;
+  }
+}
+@media (max-width: 600px){
+  .block-title__main{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 500;
+  }
+}
+@media (max-width: 400px){
+  .block-title__main{
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+}
+
+
+
 
 //Модули
 @import "modules/modules";
+
