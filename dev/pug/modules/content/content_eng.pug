@@ -150,12 +150,100 @@ footer.footer
   .contact(style={"background-image":"url(static/images/content/footer.png)"})
     .contact__text To discuss your tasks, please contact us.
     a(data-remodal-target="modal").btn Contact
-  .footer-text We are ready to conduct a preliminary survey of your business processes, existing IT systems and current plans for free and then offer concrete steps to increase scope, sales, and profits.
+  .footer-block
+    .footer-text We are ready to conduct a preliminary survey of your business processes, existing IT systems and current plans for free and then offer concrete steps to increase scope, sales, and profits.
+    .footer-link
+      a(href="#modal1") Datenschutz
+      a(href="#modal2") Impressum
 
 
 .remodal(data-remodal-id='modal', data-remodal-options='hashTracking: true, closeOnOutsideClick: true')
   button.remodal-close(data-remodal-action='close')
-  h2 Contact
-  a(href="tel:+79993454556").remodal__link +7 999 345 45 56
-  a(href="tel:+79993454556").remodal__link +7 999 345 45 56
-  a(href="mailto:contact@mimsoftware.com").remodal__link.remodal__link--mail contact@mimsoftware.com
+  h2.remodal__title Contact
+  a(href="tel:+49176787559716").remodal__link +49 176 787 55971
+  a(href="tel:+491791015288").remodal__link +49 179 101 5288
+  a(href="mailto:contact@mimsoftware.com").remodal__link.remodal__link--mail service@mimsoftware.de
+
+.remodal.remodal--full(data-remodal-id='modal1', data-remodal-options='hashTracking: true, closeOnOutsideClick: true')
+  button.remodal-close(data-remodal-action='close')
+  h2.remodal__title.remodal__title--main Datenschutzerklärung
+  ul
+    li § 1 Allgemeines
+      p Ihre personenbezogenen Daten (z.B. Anrede, Name, Anschrift, E-Mail-Adresse, Telefonnummer) werden von uns nur gemäß den Bestimmungen des deutschen Datenschutzrechts und des Datenschutzrechts der Europäischen Union (EU) verarbeitet. Die nachfolgenden Vorschriften informieren Sie neben den Verarbeitungszwecken, Empfängern, Rechtsgrundlagen, Speicherfristen auch über Ihre Rechte und den Verantwortlichen für Ihre Datenverarbeitung. Diese Datenschutzerklärung bezieht sich nur auf unsere Websites. Falls Sie über Links auf unseren Seiten auf andere Seiten weitergeleitet werden, informieren Sie sich bitte dort über den jeweiligen Umgang mit Ihren Daten.
+    li § 2 Kontaktaufnahme
+      ul
+        li.bold (1) Verarbeitungszweck
+        p Ihre personenbezogenen Daten, die Sie uns per E-Mail, Kontaktformular etc. zur Verfügung stellen, verarbeiten wir zur Beantwortung und Erledigung Ihrer Anfragen. Sie sind nicht verpflichtet, uns Ihre personenbezogenen Daten bereitzustellen. Aber ohne Mitteilung Ihrer E-Mail Adresse können wir Ihnen auch nicht per E-Mail antworten
+        li.bold (2) Rechtsgrundlagen
+          ul.normal
+            li a) Sollten Sie uns eine ausdrückliche Einwilligung zur Verarbeitung Ihrer Daten gegeben haben, ist Art.6 Abs.
+              ul
+                li 1a) DSGVO die Rechtsgrundlage für diese Verarbeitung.
+            li b) Sollten wir Ihre Daten zur Durchführung vorvertraglicher Maßnahmen verarbeiten, ist Art.6 Abs. 1b) DSGVO die Rechtsgrundlage.
+            li c) In allen anderen Fällen (insbesondere bei Nutzung eines Kontaktformulars) ist Art.6 Abs. 1f) DSGVO die Rechtsgrundlage.
+            p.bold WIDERSPRUCHSRECHT: Sie haben das Recht, der Datenverarbeitung die auf der Grundlage des Art. 6 Abs. 1 f) DSGVO erfolgt und nicht der Direktwerbung dient aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit zu widersprechen. Im Falle der Direktwerbung können Sie der Verarbeitung hingegen ohne Angabe von Gründen jederzeit widersprechen.
+        li.bold (3) Berechtigtes Interesse
+        p Unser berechtigtes Interesse an der Verarbeitung besteht darin, mit Ihnen auf schnellem Wege zu kommunizieren und Ihre Anfragen kostengünstig zu beantworten. Wenn Sie uns Ihre Anschrift mitteilen, behalten wir uns vor, diese für postalische Direktwerbung zu verwenden. Ihr Interesse am Datenschutz können Sie durch eine sparsame Datenweitergabe (z.B. Verwendung eines Pseudonyms) wahren.
+        li.bold (4) Empfängerkategorien
+        p Hostinganbieter, Versanddienstleister bei Direktwerbung
+        li.bold (5) Speicherdauer
+        p Ihre Daten werden gelöscht, wenn sich aus den Umständen entnehmen lässt, dass Ihre Anfrage bzw. der betroffene Sachverhalt abschließend geklärt ist. Falls es jedoch zu einem Vertragsschluss kommt, werden die nach Handels- und Steuerrecht erforderlichen Daten von uns für die gesetzlich bestimmten Zeiträume aufbewahrt, also regelmäßig zehn Jahre (vgl. § 257 HGB, § 147 AO).
+        li.bold (6) Widerrufsrecht
+        p Sie haben im Fall der Verarbeitung aufgrund Ihrer Einwilligung das Recht, Ihre Einwilligung jederzeit zu widerrufen.
+    li § 3 Weitere Informationen
+    li § 4 Ihre Rechte als Betroffener
+  ol Werden personenbezogene Daten von Ihnen verarbeitet, sind Sie Betroffener im Sinne der DSGVO und es stehen Ihnen folgende Rechte gegenüber uns als Verantwortlichen zu:
+    li.bold 1. Recht auf Auskunft
+    p Sie können im Rahmen des Art. 15 DSGVO Auskunft über Ihre von uns verarbeiteten personenbezogenen Daten verlangen.
+    li.bold 2. Recht auf Berichtigung
+    p Sollten die Sie betreffenden Angaben nicht (mehr) zutreffend sein, können Sie nach Art. 16 DSGVO eine Berichtigung verlangen. Sollten Ihre Daten unvollständig sein, können Sie eine Vervollständigung verlangen.
+    li.bold 3. Recht auf Löschung
+    p Sie können unter den Bedingungen des Art. 17 DSGVO die Löschung Ihrer personenbezogenen Daten verlangen.
+    li.bold 4. Recht auf Einschränkung der Verarbeitung
+    p Sie haben im Rahmen der Vorgaben des Art. 18 DSGVO das Recht, eine Einschränkung der Verarbeitung der Sie betreffenden Daten zu verlangen.
+    li.bold 5. Recht auf Datenübertragbarkeit
+    p Sie haben nach Art. 20 DSGVO das Recht, die Sie betreffenden personenbezogenen Daten, die Sie uns bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten oder die Übermittlung an einen anderen Verantwortlichen zu verlangen.
+    li.bold 6. Recht auf Widerruf der datenschutzrechtlichen Einwilligungserklärung
+    p Sie haben nach Art. 7 Abs. 3 DSGVO das Recht, Ihre datenschutzrechtliche Einwilligungserklärung jederzeit zu widerrufen. Die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung wird dadurch nicht berührt.
+    li.bold 7. Recht auf Beschwerde bei einer Aufsichtsbehörde
+    p Wenn Sie der Ansicht sind, dass die Verarbeitung der Sie betreffenden personenbezogenen Daten gegen die DSGVO verstößt, steht Ihnen nach Art. 77 DSGVO das Recht auf Beschwerde bei einer Aufsichtsbehörde (insbesondere in dem Mitgliedstaat ihres Aufenthaltsorts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes) zu.
+  ul.bold Bitte beachten Sie auch Ihr Widerspruchsrecht nach Art. 21 DSGVO:
+    li a) Allgemein: begründeter Widerspruch erforderlich Erfolgt die Verarbeitung Sie betreffender personenbezogener Daten:
+      ul
+        li - zur Wahrung unseres überwiegenden berechtigten Interesses (Rechtsgrundlage nach Art. 6 Abs. 1 f) DSGVO) oder
+        li - im öffentlichen Interesse (Rechtsgrundlage nach Art. 6 Abs. 1 e) DSGVO), haben Sie das Recht, jederzeit aus Gründen, die sich aus Ihrer besonderen Situation ergeben, gegen die Verarbeitung Widerspruch einzulegen; dies gilt auch für ein auf die Bestimmungen der DSGVO gestütztes Profiling.  Im Fall des Widerspruchs verarbeiten wir die Sie betreffenden personenbezogenen Daten nicht mehr, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.
+    li b) Sonderfall Direktwerbung: einfacher Widerspruch genügt Werden die Sie betreffenden personenbezogenen Daten verarbeitet, um Direktwerbung zu betreiben, haben Sie das Recht, jederzeit und ohne Angabe von Gründen Widerspruch gegen diese Verarbeitung einzulegen; dies gilt auch für das Profiling, soweit es mit solcher Direktwerbung in Verbindung steht. Widersprechen Sie der Verarbeitung für Zwecke der Direktwerbung, so werden die Sie betreffenden personenbezogenen Daten nicht mehr für diese Zwecke verarbeitet.
+  div.mt-20
+    span.bold Verantwortlicher<br>
+    span für die Datenverarbeitung:<br>MIM Software GmbH Amtsgericht München HRB 253927<br>Sederanger 3a<br>80538 München<br>
+    a(href="mailto:service@mimsoftware.de") service@mimsoftware.de
+  div.mt-20
+    span.bold Kontaktdaten<br>
+    span unseres Datenschutzbeauftragten:<br>Sederanger 3a<br>80538 München<br>
+  a.fz-13(href="mailto:datenschutzbeauftragter@mimsoftware.de") datenschutzbeauftragter@mimsoftware.de
+
+
+
+
+
+
+  .remodal(data-remodal-id='modal2', data-remodal-options='hashTracking: true, closeOnOutsideClick: true')
+    button.remodal-close(data-remodal-action='close')
+    h2.remodal__title Impressum
+    p.mt-20 MIM Software GmbH <br>Sederanger 3a <br> 80538 München
+
+    span.mt-20 E-Mail:
+      a(href="mailto:service@mimsoftware.de")  service@mimsoftware.de <br>
+    span Internet:
+      a(href="https://mimsoftware.de/") www.mimsoftware.de
+
+    p.mt-20 Geschäftsführer: <br>Khokim Tillyaev
+
+    p.mt-20 Rechtsform der Gesellschaft:<br>Gesellschaft mit beschränkter Haftung
+
+    p.mt-20 Handelsregister:<br>Amtsgericht München Handelsregister B
+
+    p.mt-20 Handelsregisternummer:<br>HRB 253927
+    p.mt-20 Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br>DE 327795106
+
+    p.mt-20 Plattform der EU-Kommission zur Online-Streitbeilegung: <br> www.ec.europa.eu/consumers/odr
